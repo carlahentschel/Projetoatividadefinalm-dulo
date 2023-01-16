@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #a69cac;
+}
+
+.section-1 {
+    position: absolute;
+    width: 800px;
+    height: 540px;
+    background-color: #474973;
+    border: 0;
+    border-radius: 30px;
+    top: calc(50vh - 270px);
+    left: calc(50vw - 400px);
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h2, figure {
+    margin-top: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 130px;
+}
+
+input {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    
+}
+
+.input-1 {
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #a69cac;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.4rem;
+}
+
+a:hover {
+    color: #a69cac;
+}
+
+.input-2 {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #a69cac;
+    color: white;
+}
+
+.section-2 {
+    position: absolute;
+    width: 1100px;
+    height: 200px;
+    
+    left: calc(50vw - 550px);
+}
+
+h1 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+#tarefa {
+    width: 400px;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 10px;
+    border: 0;
+}
+
+#detalhamento {
+    width: 510px;
+    text-align: left;
+    margin-left: 15px;
+    padding-left: 15px;
+    border: 0;
+}
+
+#salvar {
+    width: 100px;
+    text-align: center;
+    margin-left: 15px;
+    background-color: #474973;
+    color: white;
+    border: 0;
+}
+
+.section-3 {
+    position: absolute;
+    width: 1100px;
+    height: 350px;
+    
+    top: 200px;
+    left: calc(50vw - 550px);
+}
+
+.titulo-1 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    margin: 50px;
+    width: 30px;
+}
+
+.titulo-2, .titulo-3 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    margin: 50px;
+    width: 500px;
+}
+
+.titulo-4 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+    margin: 50px;
+    width: 200px;
+}
+
+table {
+    font-family: Poppins, sans-serif;
+    font-size: 1.4rem;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+ #apagar {
+    color: #dddddd;
+    background-color: #e63946;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    width: 80px;
+ }
+
+ #editar {
+    color: #dddddd;
+    background-color: #2a9d8f;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    width: 80px;
+ }
