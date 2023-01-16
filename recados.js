@@ -71,19 +71,29 @@ function buscarDadosDoLocalStorage(chave) {
     }
 }
 
-function apagarRecado(índice) {
+function apagarRecado(indice) {
     usuarioLogado.recados.splice(indice, 1)
 
     guardarNoLocalStorage('usuarioLogado', usuarioLogado)
 
     const tr = document.getElementById(indice)
     tr.remove()
+
 }
 
 function editarRecado(valor) {
     
 
 }
+
+/* function apagarRecado(índice) {
+    usuarioLogado.recados.splice(indice, 1)
+
+    guardarNoLocalStorage('usuarioLogado', usuarioLogado)
+
+    const tr = document.getElementById(indice)
+    tr.remove()
+} */
 
 
 
