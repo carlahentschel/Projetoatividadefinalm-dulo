@@ -86,14 +86,8 @@ function editarRecado(valor) {
 
 }
 
-/* function apagarRecado(índice) {
-    usuarioLogado.recados.splice(indice, 1)
+function sairDaAplicacao() {
+    localStorage.removeItem(usuarioLogado)
+    window.location.href = './index.html'
 
-    guardarNoLocalStorage('usuarioLogado', usuarioLogado)
-
-    const tr = document.getElementById(indice)
-    tr.remove()
-} */
-
-
-
+}

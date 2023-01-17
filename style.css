@@ -184,3 +184,24 @@ table {
     padding: 8px;
     width: 80px;
  }
+
+ .div1 {
+    position: absolute;
+    width: 1100px;
+    height: 200px;
+
+ }
+
+ .botao-sair {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    background-color: #474973;
+    color: white;
+    border: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+}
