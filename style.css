@@ -37,13 +37,14 @@ h2, figure {
 
 .formulario {
     margin-top: 20px;
+    outline-color: #a69cac;
 }
 
 h3 {
     margin-top: 130px;
 }
 
-input {
+input.input-salvar {
     width: 250px;
     height: 40px;
     border-radius: 10px;
@@ -89,7 +90,7 @@ a:hover {
     left: calc(50vw - 550px);
 }
 
-h1 {
+section > h1 {
     color: white;
     font-family: Poppins, sans-serif;
     font-size: 2rem;
@@ -168,21 +169,21 @@ table {
   }
   
  #apagar {
-    color: #dddddd;
-    background-color: #e63946;
-    border: 0;
-    border-radius: 5px;
-    padding: 8px;
-    width: 80px;
+    color: #dddddd !important;
+    background-color: #e63946 !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    padding: 8px !important;
+    width: 80px !important;
  }
 
  #editar {
-    color: #dddddd;
-    background-color: #2a9d8f;
-    border: 0;
-    border-radius: 5px;
-    padding: 8px;
-    width: 80px;
+    color: #dddddd !important;
+    background-color: #2a9d8f !important;
+    border: 0 !important;
+    border-radius: 5px !important;
+    padding: 8px !important;
+    width: 80px !important;
  }
 
  .div1 {

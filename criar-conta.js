@@ -8,9 +8,15 @@ formularioHTML.addEventListener('submit', (evento) => {
     const email = document.getElementById('email-cadastrado').value 
     const senha = document.getElementById('senha-cadastrada').value
     const senhaRepetida = document.getElementById('confirma-senha-cadastrada').value
+    const feedbackHTML = document.getElementById('feedback')
 
     if(senha !== senhaRepetida) {
-        alert('As senhas devem ser iguais. Tente novamente')
+        feedbackHTML.innerHTML = 'As senhas devem ser iguais. 😉👉 Tente novamente!'
+
+        setTimeout( () => {
+            feedbackHTML.innerHTML = ''
+        }, 3000)
+
         return
     }
 
@@ -23,18 +29,31 @@ formularioHTML.addEventListener('submit', (evento) => {
     const existe = listaUsuarios.some((valor) => valor.email === novoUsuario.email)
 
     if(existe) {
-        alert('Usuário já cadastrado!')
+        feedbackHTML.innerHTML = 'Este e-mail já foi cadastrado! 😕'
+
+        setTimeout( () => {
+            feedbackHTML.innerHTML = ''
+        }, 5000)
+
         formularioHTML.reset()
         return
     }
 
     listaUsuarios.push(novoUsuario)
 
+    feedbackHTML.innerHTML = 'Usuário cadastrado com sucesso! 🤩'
+
+    setTimeout( () => {
+        feedbackHTML.innerHTML = ''
+
+        window.location.href = './index.html'
+    }, 5000)
+
+
     guardarNoLocalStorage('usuarios', listaUsuarios)
 
     formularioHTML.reset()
-
-    window.location.href = './index.html'
+  
 })
 
 function guardarNoLocalStorage(chave, valor) {
