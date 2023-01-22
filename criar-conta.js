@@ -49,11 +49,9 @@ formularioHTML.addEventListener('submit', (evento) => {
         window.location.href = './index.html'
     }, 5000)
 
-
     guardarNoLocalStorage('usuarios', listaUsuarios)
 
     formularioHTML.reset()
-  
 })
 
 function guardarNoLocalStorage(chave, valor) {

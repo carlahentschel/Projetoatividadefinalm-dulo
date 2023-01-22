@@ -17,11 +17,11 @@ body {
 .section-1 {
     position: absolute;
     width: 800px;
-    height: 540px;
+    height: 600px;
     background-color: #474973;
     border: 0;
     border-radius: 30px;
-    top: calc(50vh - 270px);
+    top: calc(50vh - 300px);
     left: calc(50vw - 400px);
     color: white;
     font-family: Poppins, sans-serif;
@@ -29,10 +29,14 @@ body {
     text-align: center;
 }
 
-h2, figure {
-    margin-top: 20px;
+h2 {
+    margin-top: 50px;
     font-family: Poppins, sans-serif;
     font-size: 1.8rem;
+}
+
+figure {
+    margin-top: 50px;
 }
 
 .formulario {
@@ -40,8 +44,34 @@ h2, figure {
     outline-color: #a69cac;
 }
 
+.div-span {
+    position: absolute;
+    width: 800px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#email {
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+}
+
+#senha {
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+    margin-left: 10px;
+}
+
 h3 {
     margin-top: 130px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
 }
 
 input.input-salvar {
@@ -49,8 +79,7 @@ input.input-salvar {
     height: 40px;
     border-radius: 10px;
     border: 0;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .input-1 {
@@ -60,6 +89,12 @@ input.input-salvar {
     border: 0;
     background-color: #a69cac;
     color: white;
+}
+
+p, span {
+    color: #e76f51;
+    font-family: Poppins, sans-serif;
+    font-size: 1.4rem;
 }
 
 a {
@@ -73,6 +108,14 @@ a:hover {
     color: #a69cac;
 }
 
+.input-3 {
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    text-align: center;
+}
+
 .input-2 {
     width: 250px;
     height: 40px;
@@ -84,10 +127,10 @@ a:hover {
 
 .section-2 {
     position: absolute;
-    width: 1100px;
+    width: 1200px;
     height: 200px;
     
-    left: calc(50vw - 550px);
+    left: calc(50vw - 600px);
 }
 
 section > h1 {
@@ -98,11 +141,13 @@ section > h1 {
 }
 
 #tarefa {
-    width: 400px;
+    width: 500px;
     text-align: left;
     padding-left: 15px;
     margin-top: 10px;
     border: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
 }
 
 #detalhamento {
@@ -111,24 +156,28 @@ section > h1 {
     margin-left: 15px;
     padding-left: 15px;
     border: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
 }
 
 #salvar {
-    width: 100px;
+    width: 150px;
     text-align: center;
     margin-left: 15px;
     background-color: #474973;
     color: white;
     border: 0;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3rem;
 }
 
 .section-3 {
     position: absolute;
-    width: 1100px;
+    width: 1200px;
     height: 350px;
     
     top: 200px;
-    left: calc(50vw - 550px);
+    left: calc(50vw - 600px);
 }
 
 .titulo-1 {
@@ -174,7 +223,7 @@ table {
     border: 0 !important;
     border-radius: 5px !important;
     padding: 8px !important;
-    width: 80px !important;
+    width: 90px !important;
  }
 
  #editar {
@@ -184,17 +233,17 @@ table {
     border-radius: 5px !important;
     padding: 8px !important;
     width: 80px !important;
+    margin-left: 5px !important;
  }
 
  .div1 {
     position: absolute;
-    width: 1100px;
+    width: 1200px;
     height: 200px;
-
  }
 
  .botao-sair {
-    width: 100px;
+    width: 150px;
     height: 40px;
     border-radius: 10px;
     border: 0;
@@ -203,6 +252,8 @@ table {
     color: white;
     border: 0;
     position: absolute;
-    right: 20px;
+    right: 5px;
     bottom: 40px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3rem;
 }

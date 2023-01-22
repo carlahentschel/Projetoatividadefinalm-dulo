@@ -7,12 +7,20 @@ formularioHTML.addEventListener('submit', (evento) => {
     
     const email = document.getElementById('email').value
     const senha = document.getElementById('senha').value
+    const feedbackHTML = document.getElementById('feedback-login')
     
     const usuarioEncontrado = listaUsuarios.find( (valor) => valor.email === email && valor.senha === senha)
 
     if(!usuarioEncontrado) {
-        alert('E-mail ou senha estão incorretos ou não existem')
+        feedbackHTML.innerHTML = 'Ooops, e-mail ou senha estão incorretos!'
+
+        setTimeout( () => {
+            feedbackHTML.innerHTML = ''
+        }, 3000)
+
+        formularioHTML.reset()
         return
+
     } else {
         guardarNoLocalStorage('usuarioLogado', usuarioEncontrado)
         window.location.href = './recados.html'
@@ -35,4 +43,3 @@ function buscarDadosDoLocalStorage(chave) {
         return []
     }
 }
-

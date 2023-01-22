@@ -86,24 +86,21 @@ function apagarRecado(indice) {
         tr.remove()
         montarRegistrosNoHTML()
     }
- 
 }
 
 function prepararEdicao(indice) {
     
-
     const inputEditarTarefa = document.getElementById("editar-tarefa");
     const inputEditarDetalhamento = document.getElementById("editar-detalhamento");
 
     inputEditarTarefa.value = usuarioLogado.recados[indice].tarefa
     inputEditarDetalhamento.value = usuarioLogado.recados[indice].detalhamento
 
-    
     const formularioEditar = document.getElementById('formulario-editar-recados')
     formularioEditar.addEventListener('submit', (evento) => {
         evento.preventDefault()
 
-        // ATUALIZAR A LISTA DE RECADOS
+        // atualizar a lista de recados
         usuarioLogado.recados[indice].tarefa = inputEditarTarefa.value
         usuarioLogado.recados[indice].detalhamento = inputEditarDetalhamento.value
         console.log(usuarioLogado.recados[indice])
@@ -115,14 +112,12 @@ function prepararEdicao(indice) {
         montarRegistrosNoHTML()
 
         meuModalEditar.hide()
-        
     })
-   
 }
 
 function sairDaAplicacao() {
     salvarRecados()
-    localStorage.removeItem("usuarioLogado")
+    window.localStorage.removeItem("usuarioLogado")
     window.location.href = './index.html'
 }
 
